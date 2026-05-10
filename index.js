@@ -1,0 +1,70 @@
+const { Client, GatewayIntentBits } = require('discord.js');
+
+const client = new Client({
+  intents: [
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.MessageContent
+  ]
+});
+
+// BASE
+const precoBase = 6.00;
+const robuxBase = 149;
+
+const precoPorRobux = precoBase / robuxBase;
+
+client.on('messageCreate', (msg) => {
+  if (!msg.content.startsWith("$c")) return;
+
+  let texto = msg.content.toLowerCase();
+
+  // troca vírgula por ponto
+  texto = texto.replace(",", ".");
+
+  // pega número
+  const match = texto.match(/[\d.]+/);
+  if (!match) {
+    return msg.reply("Use: `$c 500` ou `$c 20 reais`");
+  }
+
+  const numero = parseFloat(match[0]);
+
+  let resposta;
+
+  // =========================
+  // DINHEIRO -> ROBUX
+  // =========================
+  if (texto.includes("real") || texto.includes("r$")) {
+
+    const robux = numero / precoPorRobux;
+
+    // cobrindo taxa do Roblox
+    const robuxComTaxa = robux / 0.7;
+
+    resposta =
+`💰 R$${numero.toFixed(2).replace(".", ",")} = <:Robux:1500746454875242577> ${Math.floor(robux)} Robux
+💸 Com taxa = <:Robux:1500746454875242577> ${Math.floor(robuxComTaxa)} Robux`;
+
+  } 
+  
+  // =========================
+  // ROBUX -> DINHEIRO
+  // =========================
+  else {
+
+    const reais = numero * precoPorRobux;
+
+    // cobrindo taxa
+    const reaisComTaxa = (numero / 0.7) * precoPorRobux;
+
+    resposta =
+`<:Robux:1500746454875242577> ${numero} Robux = R$${reais.toFixed(2).replace(".", ",")}
+💸 Com taxa = R$${reaisComTaxa.toFixed(2).replace(".", ",")}`;
+
+  }
+
+  msg.reply(resposta);
+});
+
+client.login(process.env.TOKEN);
