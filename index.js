@@ -43,8 +43,8 @@ client.on('messageCreate', (msg) => {
     const robuxComTaxa = robux / 0.7;
 
     resposta =
-`💰 R$${numero.toFixed(2).replace(".", ",")} = <:Robux:1500746454875242577> ${Math.floor(robux)} Robux
-💸 Com taxa = <:Robux:1500746454875242577> ${Math.floor(robuxComTaxa)} Robux`;
+`💰 R$${numero.toFixed(2).replace(".", ",")} = <:Bobux:1503157441859293305> ${Math.floor(robux)} Robux
+💸 Com taxa = <:Bobux:1503157441859293305> ${Math.floor(robuxComTaxa)} Robux`;
 
   } 
   
@@ -59,7 +59,7 @@ client.on('messageCreate', (msg) => {
     const reaisComTaxa = (numero / 0.7) * precoPorRobux;
 
     resposta =
-`<:Robux:1500746454875242577> ${numero} Robux = R$${reais.toFixed(2).replace(".", ",")}
+`<:Bobux:1503157441859293305> ${numero} Robux = R$${reais.toFixed(2).replace(".", ",")}
 💸 Com taxa = R$${reaisComTaxa.toFixed(2).replace(".", ",")}`;
 
   }
