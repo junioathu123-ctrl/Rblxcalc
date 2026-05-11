@@ -43,7 +43,7 @@ client.on('messageCreate', (msg) => {
     const robuxComTaxa = robux / 0.7;
 
     resposta =
-`💰 R$${numero.toFixed(2).replace(".", ",")} = <:Bobux:1503157441859293305> ${Math.floor(robux)} Robux
+`<:Dinheiros:1503157410372649030> R$${numero.toFixed(2).replace(".", ",")} = <:Bobux:1503157441859293305> ${Math.floor(robux)} Robux
 💸 Com taxa = <:Bobux:1503157441859293305> ${Math.floor(robuxComTaxa)} Robux`;
 
   } 
