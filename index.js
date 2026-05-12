@@ -73,7 +73,7 @@ __***<:hm:1503185736185155615> Com taxa (só se for enviar pelo pls donate) = R$
 
   const embed = new EmbedBuilder()
     .setColor("#FFD700") // amarelo forte
-    .setTitle("<a:IMG_9014:1503600361858924625> Calculadora de Robux")
+    .setTitle("<a:IMG_9014:1503600361858924625>  Calculadora de Robux")
     .setDescription(resposta)
     .setFooter({
       text: "Sistema de conversão"
