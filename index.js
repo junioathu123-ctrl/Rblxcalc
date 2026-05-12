@@ -52,7 +52,7 @@ client.on('messageCreate', async (msg) => {
     resposta =
 `<:Dinheiros:1503157410372649030> __***R$${numero.toFixed(2).replace(".", ",")} = <:Bobux:1503157441859293305> ${Math.floor(robux)} Robux***__
 
-<:hm:1503185736185155615> __***Com taxa (pls donate) = <:Bobux:1503157441859293305> ${Math.floor(robuxComTaxa)} Robux***__`;
+<:hm:1503185736185155615> __***Com taxa (pls donate) = <:hm:1503185736185155615> ${Math.floor(robuxComTaxa)} Robux***__`;
 
   } 
   // =========================
