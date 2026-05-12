@@ -48,9 +48,9 @@ client.on('messageCreate', async (msg) => {
     const robuxComTaxa = robux / 0.7;
 
     resposta =
-`__***<:Dinheiros:1503157410372649030>  R$${numero.toFixed(2).replace(".", ",")} = <:Bobux:1503157441859293305> ${Math.floor(robux)} Robux***__
+`__**<:Dinheiros:1503157410372649030>  R$${numero.toFixed(2).replace(".", ",")} = <:Bobux:1503157441859293305> ${Math.floor(robux)} Robux**__
 
-__***<:hm:1503185736185155615>  Com taxa (só se for enviar pelo pls donate) = <:Bobux:1503157441859293305>  ${Math.floor(robuxComTaxa)} Robux***__`;
+__**<:hm:1503185736185155615>  Com taxa (só se for enviar pelo pls donate) = <:Bobux:1503157441859293305>  ${Math.floor(robuxComTaxa)} Robux**__`;
 
   } 
   
@@ -65,9 +65,9 @@ __***<:hm:1503185736185155615>  Com taxa (só se for enviar pelo pls donate) = <
     const reaisComTaxa = (numero / 0.7) * precoPorRobux;
 
     resposta =
-`__***<:Bobux:1503157441859293305> ${numero} Robux = R$${reais.toFixed(2).replace(".", ",")}***__
+`__**<:Bobux:1503157441859293305> ${numero} Robux = R$${reais.toFixed(2).replace(".", ",")}**__
 
-__***<:hm:1503185736185155615>  Com taxa (só se for enviar pelo pls donate) = *<:Dinheiros:1503157410372649030>  R$${reaisComTaxa.toFixed(2).replace(".", ",")}***__`;
+__**<:hm:1503185736185155615>  Com taxa (só se for enviar pelo pls donate) = *<:Dinheiros:1503157410372649030>  R$${reaisComTaxa.toFixed(2).replace(".", ",")}**__`;
 
   }
 
