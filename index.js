@@ -66,7 +66,7 @@ client.on('messageCreate', async (msg) => {
     resposta =
 `<:Bobux:1503157441859293305> __***${numero} Robux = <:Dinheiros:1503157410372649030> R$${reais.toFixed(2).replace(".", ",")}***__
 
-<:hm:1503157410372649030> __***Com taxa (pls donate) = R$${reaisComTaxa.toFixed(2).replace(".", ",")}***__`;
+<:hm:1503185736185155615> __***Com taxa (pls donate) = <:Dinheiros:1503157410372649030> R$${reaisComTaxa.toFixed(2).replace(".", ",")}***__`;
   }
 
   const embed = new EmbedBuilder()
