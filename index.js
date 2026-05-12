@@ -60,7 +60,7 @@ client.on('messageCreate', (msg) => {
 
     resposta =
 `<:Bobux:1503157441859293305> ${numero} Robux = R$${reais.toFixed(2).replace(".", ",")}
-<:Bobux:1503157441859293305> Com taxa (só se for enviar pelo pls donate) = R$${reaisComTaxa.toFixed(2).replace(".", ",")}`;
+<:hm:1503185736185155615> Com taxa (só se for enviar pelo pls donate) = R$${reaisComTaxa.toFixed(2).replace(".", ",")}`;
 
   }
 
